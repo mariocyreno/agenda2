@@ -1,9 +1,17 @@
 package br.com.agenda.util;
 
 public class SQL {
-
-	public static final String INSERE = "INSERT INTO CONTATO "
-			+ "(NOME, EMAIL, ENDERECO, DATA_NASCIMENTO) VALUES(?, ?, ?, ?)";
 	
-	public static final String BUSCA_TODOS = "SELECT * FROM CONTATO";
+	public static final String INSERE_CONTATO = 
+			"INSERT INTO CONTATO(NOME,EMAIL,ENDERECO,DATA_NASCIMENTO) VALUES (?,?,?,?)";
+	
+	public static final String REMOVE_CONTATO = 
+			"DELETE FROM CONTATO WHERE CONTATO_ID = ?";
+	
+	public static final String CONSULTA_TODOS_CONTATOS = 
+			"SELECT CONTATO_ID, NOME, EMAIL, ENDERECO, DATA_NASCIMENTO FROM CONTATO";
+	
+	public static final String CONSULTA_CONTATOS_POR_ID = 
+			"SELECT CONTATO_ID, NOME, EMAIL, ENDERECO, DATA_NASCIMENTO FROM CONTATO WHERE CONTATO_ID = ?";
+
 }

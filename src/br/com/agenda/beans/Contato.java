@@ -1,20 +1,22 @@
 package br.com.agenda.beans;
 
-import java.util.Calendar;
+import java.util.*;
 
 public class Contato {
-
-	private Integer id;
+	
+	private Integer contatoId;
 	private String nome;
 	private String email;
 	private String endereco;
 	private Calendar dataNascimento;
 	
-	public Integer getId() {
-		return id;
+	
+	
+	public Integer getContatoId() {
+		return contatoId;
 	}
-	public void setId(Integer id) {
-		this.id = id;
+	public void setContatoId(Integer contatoId) {
+		this.contatoId = contatoId;
 	}
 	public String getNome() {
 		return nome;
@@ -42,4 +44,7 @@ public class Contato {
 	}
 	
 	
+	
+	
+
 }
